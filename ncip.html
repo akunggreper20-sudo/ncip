@@ -1,0 +1,294 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Untuk Kamu, Selamanya</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --maroon:#7a1f2b;
+  --pink:#f4b6c2;
+  --cream:#fff5ec;
+  --soft:#fde4e8;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:linear-gradient(180deg,var(--cream),#fff);
+  color:#3a2a2a;
+  overflow-x:hidden;
+}
+
+/* SECTION */
+section{
+  padding:90px 22px;
+  max-width:900px;
+  margin:auto;
+}
+
+/* OPENING */
+.opening{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:linear-gradient(180deg,var(--soft),var(--cream));
+  animation:fadeIn 2s;
+}
+
+.opening h1{
+  font-size:32px;
+  color:var(--maroon);
+  margin-bottom:18px;
+}
+
+.opening p{
+  max-width:520px;
+  line-height:1.8;
+  opacity:.85;
+}
+
+/* BUTTON */
+.btn{
+  margin-top:32px;
+  padding:14px 32px;
+  background:var(--maroon);
+  color:white;
+  border:none;
+  border-radius:30px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.btn:hover{
+  background:#5f1620;
+  transform:scale(1.05);
+}
+
+/* CARD */
+.card{
+  background:white;
+  border-radius:22px;
+  padding:36px;
+  box-shadow:0 25px 45px rgba(0,0,0,.06);
+  margin-bottom:50px;
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+
+.card.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+h2{
+  color:var(--maroon);
+  margin-bottom:14px;
+}
+
+p{
+  line-height:1.9;
+  margin-bottom:12px;
+}
+
+/* LIST */
+ul{
+  padding-left:18px;
+}
+li{
+  margin-bottom:10px;
+}
+
+/* SECRET */
+.secret-btn{
+  margin:70px auto 0;
+  display:block;
+  padding:14px 34px;
+  border-radius:30px;
+  border:2px dashed var(--maroon);
+  background:transparent;
+  color:var(--maroon);
+  cursor:pointer;
+  transition:.3s;
+}
+
+.secret-btn:hover{
+  background:var(--maroon);
+  color:white;
+}
+
+.surprise{
+  display:none;
+  background:var(--soft);
+  border-radius:22px;
+  padding:46px;
+  text-align:center;
+  animation:fadeIn 2s;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:40px 20px;
+  font-size:14px;
+  opacity:.6;
+}
+
+/* ANIM */
+@keyframes fadeIn{
+  from{opacity:0}
+  to{opacity:1}
+}
+</style>
+</head>
+
+<body>
+
+<!-- MUSIC -->
+<div id="music" style="display:none;">
+<iframe id="ytmusic" width="0" height="0"
+src="https://www.youtube.com/embed/3uT8zK0v9Rk?enablejsapi=1"
+allow="autoplay"></iframe>
+</div>
+
+<!-- OPENING -->
+<section class="opening">
+<h1>Haiii kamuu, kamu 🤍</h1>
+<p>
+Ini bukan sekadar website biasaa yang ncippp buat.<br>
+Ini ruang kecil yang ncipp buat cuma buat kamu pelan-pelan,<br>
+kamuu adell kan?karna yang bisa akses website ini cuma adelll pacarrnya ncip<br>
+semenjakk kedatangan kamuu sengg di hidupp akuu hidupp akuu lebih berwarna akuu lebih ceriaa aaaaaa lebih semuanya deh wkwkw
+</p>
+
+<button class="btn" onclick="startExperience()">
+Buka hadiahnya 🎁
+</button>
+</section>
+
+<!-- STORY -->
+<section id="journey">
+
+<div class="card reveal">
+<h2>Awalnya Kita</h2>
+<p>
+Awalnya akuu maluu banget buat confess hahah.<br>
+bukan karna gasuka yaa sengg tapii akuu mikir emangg cewek se cantik se pinter dia mau?
+</p>
+<p>
+Tapi entah bagaimana,<br>
+kamu datang dengan cara paling sederhana,<br>
+lalu pelan-pelan jadi bagian yang sulit dilepaskan.
+</p>
+</div>
+
+<div class="card reveal">
+<h2>seharusnya momen kecil jadi momen Ternyata Besar</h2>
+<ul>
+<li>Percakapan random yang berujung ketawa sendiri.</li>
+<li>Perhatian kecil yang sering kamu anggap biasa.</li>
+<li>Cara kamu hadir, bahkan saat tidak banyak bicara.</li>
+<li>Hal sepele yang justru paling aku sukaaaaa .</li>
+</ul>
+</div>
+
+<div class="card reveal">
+<h2>Hal Tentang Kamu (yang Mungkin Tak Pernah Aku Bilang)</h2>
+<p>
+Aku suka caramu menjadi diri sendiri.<br>
+Tidak berisik, tidak dibuat-buat.
+</p>
+<p>
+haiiiii cantikkkk, tau gaa? akuuuu lagii bahagiaa bangettt, banget banget bangettt, karenaa apaa?? karena aku masii ga nyangkaaaa kalo aku akhirnyaaa benerann bisaa samaa kamuu, wanitaa yangg aku idamkann darii duluu, bukann hanya darii fisikk, bahkannn sifatt dann perilakuumuu pun sangatt aku banggakann, bahagiaa bangett dapett cewee "sempurnaaa" kekk kamuu ahahaa, bahkann meskipunn, kamu bukan yangg pertama, tapii kamuu masii bisaa ngasii firstt expriencee yangg luarrr biasaaaa ke akuuu, banggaaaa bangetttt-punyaa kamuu, tetappp samaa akuu saayanggg yaaa barenggg-barenggg terussssss, i lovee youuu soo muchhhh bebeeyyyy🤍💐😵‍💫 .<br>
+Dan aku suka bagaimana bersamamu,<br>
+segala hal terasa lebih ringan.
+</p>
+</div>
+
+<div class="card reveal">
+<h2>Catatan Jujur</h2>
+<p>
+Aku sayang kamu.<br>
+Bukan karena hal besar yang kamu lakukan,<br>
+tapi justru karena hal kecil yang terus kamu ulang.
+</p>
+<p>
+Kamu udahh buatt hidupp ncipp ini lebih ber-warna.<br>
+Dan itu bukan hal yan
+</p>
+</div>
+
+<button class="secret-btn" onclick="openSurprise()">
+Jangan klik kalau belum siap yah sayanggg 🤍
+</button>
+
+<div class="surprise" id="surprise">
+<h2>Untuk Kamu</h2>
+<p>
+
+</p>
+<p>
+Happy Valentine's Day buat pacarku tersayang! Jujur, aku nggak butuh tanggal khusus buat sayang sama kamu, karena tiap hari perasaanku tetap sama. Kamu selalu jadi alasan aku semangat lagi, aku merasa di hargai sama kamu. Tetap di sini terus ya, sayang! Sekali lagi happy Valentine's Day yaa sayangkuuu🩵🩷,<br>
+berjalan, dan tumbuh… dengan
+</p>
+<p>
+Selamat Hari Valentine sayanggg🤍<br>
+darii sekian banyak cewekk yang ncipp ketemu kayaknya aku sukaa sayangg bangett samaa kamu
+</p>
+</div>
+
+</section>
+
+<footer>
+Dibuat sekali, untuk satu orang, dan tidak akan pernah diulang.
+</footer>
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+
+function revealOnScroll(){
+  reveals.forEach(card=>{
+    const top = card.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100){
+      card.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+
+function startExperience(){
+  document.getElementById('journey')
+    .scrollIntoView({behavior:'smooth'});
+
+  const iframe = document.getElementById('ytmusic');
+  iframe.src += "&autoplay=1";
+  document.getElementById('music').style.display = "block";
+}
+
+function openSurprise(){
+  const s = document.getElementById('surprise');
+  s.style.display = 'block';
+  s.scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
+```
+
+---
+
